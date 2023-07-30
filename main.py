@@ -1,9 +1,7 @@
 import requests
-import pyfiglet
 
 banner_text = '     SubScan\nEnter target website like example.com'
-my_banner = pyfiglet.figlet_format(banner_text, font='univers')
-print(my_banner)
+print(banner_text)
 target_input = input('Enter your target website:\n')
 
 def make_request(url):
