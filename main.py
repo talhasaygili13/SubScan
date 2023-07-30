@@ -8,6 +8,9 @@ def make_request(url):
         return requests.get(url)
     except requests.exceptions.ConnectionError:
         pass
+    except KeyboardInterrupt:
+        print("\n\nExiting...")
+        exit()
 
 with open('subdomainlist.txt', 'r') as subdomain_list:
     for word in subdomain_list:
