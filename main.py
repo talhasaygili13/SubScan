@@ -1,6 +1,7 @@
 import requests
+import terminal_banner
 
-print('SubScan ')
+banner_text = '     SubScan\nEnter target website like example.com'
 target_input = input('Enter your target website:\n')
 
 def make_request(url):
